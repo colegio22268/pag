@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#titulo {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#btn-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #titulo {
+        font-size: 1.8rem;
+    }
+}
